@@ -1,1 +1,14 @@
 /* CSS files will go here! */
+
+/* You can create global color variables in css like this! */
+:root {
+    --primary: #222;
+    --secondary: #888;
+    --tertiary: #ddd;
+}
+
+/* use a css variable like below! */
+
+body {
+    background-color: var(--tertiary);
+}
