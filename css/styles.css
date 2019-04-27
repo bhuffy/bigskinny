@@ -12,3 +12,20 @@
 body {
     background-color: var(--tertiary);
 }
+
+footer a{
+  color: #000000;
+  font-size: 12px;
+}
+
+footer h5{
+  font-size: 16px;
+}
+
+
+/*Bootstrap Overrides*/
+.card, .btn, .form-control { border-radius: 0; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: silver !important;
+}
