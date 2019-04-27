@@ -96,14 +96,18 @@ footer h5{
 
 /* Product carousel css */
 
-.scrolling-wrapper {
+.search-container {
     margin: 2rem 4rem;
+}
+
+.scrolling-wrapper {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
 
+/* This would disable the horizontal scroll bar but maybe we need it for usability */
 /* .scrolling-wrapper::-webkit-scrollbar {
     display: none;
 } */
@@ -111,7 +115,7 @@ footer h5{
 .scrolling-wrapper .card {
     flex: 0 0 auto;
     width: 20rem;
-    margin: 10px 1rem;
+    margin: 0.5rem 0 3rem;
 }
 
 .navbar .navbar-expand-lg .navbar-light .bg-ligh {
