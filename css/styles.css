@@ -38,8 +38,19 @@ body {
   background-size: cover;
 }
 
+.background-search {
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #men {
   background-image: url("../imgs/backpacking.jpg");
+}
+
+#men-search {
+  background-image: url("../imgs/cover-mens.jpg");
 }
 
 #women {
