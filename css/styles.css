@@ -29,3 +29,21 @@ footer h5{
 .navbar-dark .navbar-nav .nav-link {
   color: silver !important;
 }
+
+/* Product carousel css */
+
+.scrolling-wrapper {
+    margin: 2rem 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.scrolling-wrapper .card {
+    flex: 0 0 auto;
+}
