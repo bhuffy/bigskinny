@@ -9,14 +9,15 @@
 
 /* use a css variable like below! */
 
+/* General styling  */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--tertiary);
     overflow-x: hidden;
 }
-
-/* .hero-container {
-  position: ;
-} */
 
 .hero-image {
   background-image: url("../imgs/cover.jpg");
@@ -87,6 +88,10 @@ footer h5{
 
 .navbar-dark .navbar-nav .nav-link {
   color: silver !important;
+}
+
+.navbar-dark .navbar-nav .nav-link a {
+    color: silver !important;
 }
 
 /* Product carousel css */

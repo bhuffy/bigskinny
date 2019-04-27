@@ -17,6 +17,7 @@
     <!-- CSS links -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">    
     <link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
     <link href="css/carousel.css" rel="stylesheet">
 
@@ -36,14 +37,14 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">MENS <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">MENS <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">WOMENS</a>
+                <a class="nav-link" href="#women">WOMENS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">ACCESSORIES</a>
+                <a class="nav-link" href="#accessories">ACCESSORIES</a>
             </li>
             <li class="nav-logo">
                 <a class="nav-link" href="index.html"><img src="imgs/logo.png" alt="logo" height=80 width=80 class="center"/></a>
@@ -55,7 +56,14 @@
                 <a class="nav-link" href="#">BLOG</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">CART</a>
+                <a href="checkout.html">
+                    <button type="button" class="btn btn-dark">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span style="padding: 5px;">Cart</span>
+                        <span class="badge badge-light" style="padding: 5px">2</span> 
+                        <span class="sr-only">unread messages</span>
+                    </button>
+                </a>
             </li>
         </div>
     </nav>
@@ -64,8 +72,8 @@
       <div class="row">
         <div class="hero-image col-md-12">
           <div class="col-text">
-            <h1 class = "font-weight-bold text-uppercase mt-3 mb-4"> HEADLINE </h1>
-            <button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button>
+            <h1 class = "font-weight-bold text-uppercase mt-3 mb-4"> FIND YOUR ADVENTURE. BUY BIG SKINNY. </h1>
+            <a href="search.html"><button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button></a>
           </div>
         </div>
       </div>
@@ -76,10 +84,10 @@
       <div class="row">
         <div id="men" class="col-md-6 background">
           <div class="col-text">
-            <h1 class = "font-weight-bold text-uppercase mt-3 mb-4"> MEN'S </h1>
+            <h1 class="font-weight-bold text-uppercase mt-3 mb-4"> MEN'S </h1>
             <br>
             <br>
-            <button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button>
+            <a href="search.html"><button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button></a>
           </div>
         </div>
         <div  id="women" class="col-md-6 background">
@@ -87,7 +95,7 @@
             <h1 class = "font-weight-bold text-uppercase mt-3 mb-4"> WOMEN'S </h1>
             <br>
             <br>
-            <button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button>
+            <a href="search.html"><button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button></a>
           </div>
         </div>
       </div>
@@ -99,7 +107,7 @@
           <div class="col-text">
             <h1 class = "font-weight-bold text-uppercase mt-3 mb-4"> Accessories </h1>
             <br>
-            <button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button>
+            <a href="search.html"><button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button></a>
           </div>
         </div>
       </div>
@@ -112,7 +120,7 @@
               <h1 class = "font-weight-bold text-uppercase mt-3 mb-4"> Blog </h1>
               <br>
               <br>
-              <button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button>
+              <a href="search.html"><button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button></a>
             </div>
           </div>
           <div  id="contact" class="col-md-6 background">
@@ -120,7 +128,7 @@
               <h1 class = "font-weight-bold text-uppercase mt-3 mb-4"> Contact </h1>
               <br>
               <br>
-              <button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button>
+              <a href="search.html"><button type="button" class="shadow btn btn-light shop-now">SHOP NOW</button></a>
             </div>
           </div>
         </div>
@@ -129,7 +137,7 @@
     <!--Footer-->
     <footer class = "page-footer font-small bg-light pt-3">
         <!--Footer Links-->
-        <div class = "container text-center text-md-left">
+        <div class = "text-center text-md-left px-5"> <!-- Removed container class, may cause responsive issues so check-->
             <!--Grid Row-->
             <div class ="row">
                 <div class = "col-md-2 mx-auto">
@@ -155,42 +163,48 @@
                     </ul>
                 </div>
 
-        <!--Grid Column-->
+                <!--Grid Column-->
+                <hr class="clearfix w-75 d-md-none">
+                <div class = "col-md-2 mx-auto">
+                    <h5 class = "font-weight-bold text-uppercase mt-3 mb-4"> Information </h5>
+                    <ul class = "list-unstyled">
+                        <li><a href = "index.html"> Terms & Conditions</a></li>
+                        <li><a href = "index.html"> Privacy Policy</a></li>
+                        <li><a href = "index.html"> Warranty </a></li>
+                    </ul>
+                </div>
 
-            <hr class="clearfix w-75 d-md-none">
-            <div class = "col-md-2 mx-auto">
-                <h5 class = "font-weight-bold text-uppercase mt-3 mb-4"> Information </h5>
-                <ul class = "list-unstyled">
-                    <li><a href = "index.html"> Terms & Conditions</a></li>
-                    <li><a href = "index.html"> Privacy Policy</a></li>
-                    <li><a href = "index.html"> Warranty </a></li>
-                </ul>
-            </div>
+                <!--Grid Column-->
+                <hr class="clearfix w-75 d-md-none">
+                <div class = "col-md-2 mx-auto">
+                    <h5 class = "font-weight-bold text-uppercase mt-3 mb-4"> Connect </h5>
+                    <ul class = "list-unstyled">
+                        <li><a href = "index.html"> Instagram</a></li>
+                        <li><a href = "index.html"> Twitter</a></li>
+                        <li><a href = "index.html"> Facebook </a></li>
+                    </ul>
+                </div>
 
+                <!-- Grid column -->
+                <hr class="clearfix w-75 d-md-none">
+                <div class = "col-md-4 mx-auto">
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Wallets made just for you.</h5>
+                    <p>Stay in touch for discounts on updates on Big Skinny products!</p>
 
-            <!--Grid Column-->
-            <hr class="clearfix w-75 d-md-none">
-            <div class = "col-md-2 mx-auto">
-                <h5 class = "font-weight-bold text-uppercase mt-3 mb-4"> Connect </h5>
-                <ul class = "list-unstyled">
-                    <li><a href = "index.html"> Instagram</a></li>
-                    <li><a href = "index.html"> Twitter</a></li>
-                    <li><a href = "index.html"> Facebook </a></li>
-                </ul>
-            </div>
-
-            <!-- Grid column -->
-            <hr class="clearfix w-75 d-md-none">
-            <div class = "col-md-4 mx-auto">
-                <!-- Content -->
-                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
-                <p>Here you can use rows and columns here to organize your footer content.</p>
+                    <form class="input-group">
+                        <input type="text" class="form-control form-control" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-dark" type="button">Sign up</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">&copy; 2018 Copyright:
-            <a href="index.html"> BigSkinny</a>
+            <a href="index.html">BigSkinny</a>
         </div>
 
     </footer>
