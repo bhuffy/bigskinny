@@ -11,6 +11,65 @@
 
 body {
     background-color: var(--tertiary);
+    overflow-x: hidden;
+}
+
+/* .hero-container {
+  position: ;
+} */
+
+.hero-image {
+  background-image: url("../imgs/cover.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col-md-6 {
+  padding: 0;
+}
+
+.background {
+  height: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#men {
+  background-image: url("../imgs/backpacking.jpg");
+}
+
+#women {
+  background-image: url("../imgs/women.jpg");
+}
+
+#accessories {
+  background-image: url("../imgs/accessories.jpg");
+  height: 45%;
+}
+
+#blog {
+  background-image: url("../imgs/writing.jpg");
+}
+
+#contact {
+  background-image: url("../imgs/road.jpg");
+}
+
+.col-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.shop-now {
+  font-weight: bold;
+  padding: 15px 60px;
 }
 
 footer a{
