@@ -88,3 +88,44 @@ footer h5{
 .navbar-dark .navbar-nav .nav-link {
   color: silver !important;
 }
+
+/* Product carousel css */
+
+.scrolling-wrapper {
+    margin: 2rem 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* .scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+} */
+
+.scrolling-wrapper .card {
+    flex: 0 0 auto;
+    width: 20rem;
+    margin: 10px 1rem;
+}
+
+.navbar .navbar-expand-lg .navbar-light .bg-ligh {
+  background: #808080;
+}
+
+.navbar-nav{
+  display: flex;
+  float: none;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0px;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.nav-item {
+  margin-top: 30px;
+}
+
